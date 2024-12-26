@@ -1,0 +1,33 @@
+
+
+<div class="users">
+    <h2 class="m-2">Users list</h2>
+
+<table >
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>phone</th>
+        <th>Enroll Number</th>
+        <th>Date of admission</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of usersList">
+        <td><img [src]="user.image" class="img-small"></td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.id}}</td>
+        <td>{{user.birthDate}}</td>
+        <td><i class="fa-solid fa-pen"></i></td>
+        <td><i class="fa-solid fa-trash"></i></td>
+
+      </tr>
+ 
+    </tbody>
+  </table>
+</div>

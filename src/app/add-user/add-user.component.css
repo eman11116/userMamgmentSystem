@@ -1,0 +1,19 @@
+.add-user{
+    background-color: #f8f8f8;
+    height: 100vh;
+}
+.row{
+    border-radius: 10px;
+    background-color: white;
+    padding: 6rem 0;
+}
+.btn{
+    background-color:#F8D442 ;
+}
+input{
+    background-color:  #f8f8f8;
+    border-radius: 0;
+}
+h2{
+    border-bottom: 1px solid #ACACAC;
+}

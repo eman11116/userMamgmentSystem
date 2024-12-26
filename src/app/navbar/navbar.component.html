@@ -1,0 +1,46 @@
+<div class="icons ">
+    <button class="hamburger" *ngIf="!isSidebarOpen" (click)="toggleSidebar()">
+        <span>&#9776;</span>
+    </button>
+    <div class="close-icon" *ngIf="isSidebarOpen" (click)="toggleSidebar()">
+        <i class="fas fa-times"></i>
+    </div>
+</div>
+
+<div class="sidebar" [ngClass]="{'open': isSidebarOpen}">
+    <div class="sidebar2">
+        <div class="sidebarContent">
+            <img src="../../assets/1.jpg" class="">
+            <h2>Karthi Madesh</h2>
+            <p>Admin</p>
+        </div>
+        <nav>
+            <div>
+                <div class="">
+                    <ul class=" me-auto my-5 mb-lg-0 flex-column">
+                        <li>
+                            <a routerLink="home" routerLinkActive="active"> <i class="fa-solid fa-house"></i>Home</a>
+                        </li>
+                        <li>
+
+                            <a routerLink="/home/users" routerLinkActive="active"> <i class="fa-regular fa-bookmark"></i>Users</a>
+                        </li>
+                        <li>
+                            <a routerLinkActive="active" routerLink="/home/add-user"> <i class="fa-solid fa-graduation-cap"></i>Add User</a>
+                        </li>
+                        <li>
+                            
+                            <a routerLinkActive="active" routerLink="/home/update"><i class="fa-solid fa-dollar-sign"></i>Update User</a>
+                        </li>
+                        <li>
+                            
+                            <a routerLinkActive="active" routerLink="/home/profile"><i class="fa-solid fa-dollar-sign"></i>Profile</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
